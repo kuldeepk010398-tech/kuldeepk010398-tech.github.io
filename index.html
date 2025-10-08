@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Gaurav Srivastava - Researcher Portfolio</title>
+    <!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration for Professional Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent-gold': '#d4ac0d', 
+                        'charcoal': '#2c3e50', 
+                        'contact-bg': '#165c40', /* Professional Deep Forest Green */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Styles for Hero Gradient and Readability */
+        .hero-gradient {
+            /* Blue/Teal to Green/Teal Gradient matching the image style */
+            background: linear-gradient(135deg, #3498db 0%, #1abc9c 100%); 
+        }
+        .section-header {
+            border-bottom: 2px solid #d4ac0d;
+        }
+        .list-disc-gold li::marker {
+            color: #d4ac0d;
+        }
+        /* Custom Styles for Experience Cards */
+        .experience-card {
+            transition: all 0.3s ease-in-out;
+            border-left: 5px solid #e5e7eb; /* Light gray line for subtle structure */
+            position: relative;
+        }
+        .experience-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Stronger shadow on hover */
+            transform: translateY(-2px); /* Slight lift */
+            border-left: 5px solid #d4ac0d; /* Gold line on hover */
+        }
+        /* Custom Styles for Education Cards */
+        .education-card {
+            transition: all 0.3s ease-in-out;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .education-card:hover {
+            border-color: #d4ac0d;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transform: translateY(-1px);
+        }
+        .degree-icon {
+            color: #d4ac0d;
+        }
+        /* Custom Styles for Core Industry Cards */
+        .industry-card {
+            transition: all 0.3s ease-in-out;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px; /* Increased padding for card look */
+            text-align: left; /* Left alignment */
+            background-color: white; /* Explicitly white background */
+        }
+        .industry-card:hover {
+            border-color: #d4ac0d;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
+        }
+        /* Specific styling for the competency backgrounds */
+        .competency-title {
+            background-color: #d4ac0d; /* Gold background */
+            color: #2c3e50; /* Charcoal text for high contrast */
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    
+    <!-- FIXED NAVIGATION BAR -->
+    <nav class="sticky top-0 z-20 bg-white bg-opacity-10 backdrop-blur-sm shadow-md py-4 transition duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <!-- Logo/Name -->
+            <a href="#hero-section" class="text-xl font-bold text-white md:text-charcoal transition duration-300 hover:text-accent-gold">
+                Dr. G. Srivastava
+            </a>
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-6 text-white md:text-charcoal font-medium">
+                <a href="#about" class="hover:text-accent-gold transition duration-150">About</a>
+                <a href="#experience" class="hover:text-accent-gold transition duration-150">Experience</a>
+                <a href="#education" class="hover:text-accent-gold transition duration-150">Education</a>
+                <a href="#publications" class="hover:text-accent-gold transition duration-150">Publications</a>
+                <!-- Updated Contact link to point to the new section -->
+                <a href="#contact" class="hover:text-accent-gold transition duration-150">Contact</a> 
+            </div>
+        </div>
+    </nav>
+    
+    <!-- FULL-WIDTH HERO SECTION (Front Page) -->
+    <header id="hero-section" class="hero-gradient pt-24 pb-40 text-center text-white relative">
+        
+        <div class="max-w-7xl mx-auto px-4"> <!-- Increased width to max-w-7xl -->
+            <!-- Main Title -->
+            <h1 class="text-5xl sm:text-7xl font-extrabold mb-4 drop-shadow-lg">
+                Dr. Gaurav Srivastava
+            </h1>
+            <!-- Role/Title -->
+            <p class="text-xl sm:text-2xl font-medium mb-4 drop-shadow-md">
+                Researcher @ University of Central Florida
+            </p>
+            <!-- Tagline -->
+            <p class="text-base sm:text-xl italic font-light mb-10 text-yellow-200 drop-shadow-sm">
+                Driving Innovative Research Solutions in Biotechnology, Nanoparticles & Biomedical Engineering
+            </p>
+
+            <!-- Contact Buttons (Now with actual links) -->
+            <div class="flex justify-center space-x-4">
+                <a href="https://linkedin.com/in/gauravsri208017" target="_blank" class="bg-white bg-opacity-20 hover:bg-opacity-30 border border-white text-white font-semibold py-2 px-6 rounded-lg transition duration-300 shadow-lg">
+                    LinkedIn
+                </a>
+                <a href="https://wa.me/918756247821" target="_blank" class="bg-white bg-opacity-20 hover:bg-opacity-30 border border-white text-white font-semibold py-2 px-6 rounded-lg transition duration-300 shadow-lg">
+                    WhatsApp
+                </a>
+                <a href="mailto:gauravsri@live.com" class="bg-white bg-opacity-20 hover:bg-opacity-30 border border-white text-white font-semibold py-2 px-6 rounded-lg transition duration-300 shadow-lg">
+                    Email
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT SECTIONS -->
+    <!-- Content is pulled up to overlap the hero section slightly for a modern look -->
+    <div class="max-w-7xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden p-6 md:p-10 lg:p-12 -mt-24 relative z-10 mb-10"> <!-- Increased width to max-w-7xl -->
+        
+        <!-- ABOUT SECTION -->
+        <section id="about" class="mb-10">
+            <h2 class="text-2xl font-bold text-charcoal pb-2 mb-6 section-header">About</h2>
+            <div class="space-y-4 text-gray-700">
+                <p>As a Postdoctoral Research Associate at the University of Central Florida, my research focuses on advancing the field of <strong>microphysiological systems (MPS)</strong> and organ-on-chip systems to replicate inter-organ metabolic interactions for translational research. With over two years of experience, I have led multidisciplinary projects, including the development of biomimetic platforms that model heart, liver, and skeletal muscle systems, as well as preclinical Beagle-based physiological systems for pharmacokinetics and toxicology studies. My expertise in <strong>nanotechnology</strong>, <strong>microphysiological systems</strong>, and <strong>analytical chemistry</strong> supports innovative solutions for complex biomedical challenges.</p>
+                <p>Previously, I served as Head of Research and Development at Flavin Labs, where I directed the establishment of cutting-edge nanofertilizer laboratories and spearheaded impactful projects in nutraceuticals and poultry management. My strategic approach enabled the successful execution of innovative research initiatives. Passionate about advancing science, I am committed to fostering collaboration and delivering translational solutions that address critical needs in biotechnology, agriculture, and biomedical engineering.</p>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION - ATTRACTIVE CARD LAYOUT -->
+        <section id="experience" class="mb-10">
+            <h2 class="text-2xl font-bold text-charcoal pb-2 mb-6 section-header">Experience</h2>
+            
+            <div class="space-y-6">
+                
+                <!-- UCF -->
+                <div class="experience-card p-6 bg-white rounded-lg">
+                    <h3 class="text-xl font-bold text-charcoal">Postdoctoral Research Associate</h3>
+                    <p class="text-lg italic text-gray-600">University of Central Florida · Full-time</p>
+                    <p class="text-sm text-gray-500 mb-3">Feb 2023 - Present · Orlando, Florida, United States</p>
+                    <ul class="list-disc ml-5 space-y-2 text-gray-700 list-disc-gold">
+                        <li><strong>Project Lead</strong> – Developed a <strong>Micro-Physiological "biomimetic" Heart–Liver–Skeletal Muscle System</strong> for Modeling Comorbidities, replicating physiological cross-talk relevant to cardiovascular, hepatic, and musculoskeletal disorders.</li>
+                        <li><strong>Project Lead</strong> – Directed the development of <strong>Beagle Heart–Liver Multi-Physiological Systems</strong> for preclinical translational research in pharmacokinetics and systemic toxicology.</li>
+                        <li><strong>Electrophysiology Research</strong> – Conducted assessments using multi-electrode arrays (MEA) and <strong>Patch Clamp Studies</strong> on neuronal and skeletal muscle cell lines to evaluate tissue functionality and drug responses.</li>
+                    </ul>
+                </div>
+
+                <!-- Flavin Labs -->
+                <div class="experience-card p-6 bg-white rounded-lg">
+                    <h3 class="text-xl font-bold text-charcoal">Head of Research And Development</h3>
+                    <p class="text-lg italic text-gray-600">Flavin Labs · Full-time</p>
+                    <p class="text-sm text-gray-500 mb-3">Sep 2022 - Feb 2023 · Lucknow, Uttar Pradesh, India</p>
+                    <p class="text-gray-700">Oversaw the establishment of a <strong>state-of-the-art nanofertilizer lab</strong> and led research team in developing groundbreaking products in nutraceuticals, nanofertilizers, and poultry management, securing grants and driving strategic project execution.</p>
+                </div>
+
+                <!-- IIT Kanpur -->
+                <div class="experience-card p-6 bg-white rounded-lg">
+                    <h3 class="text-xl font-bold text-charcoal">Senior Research Engineer</h3>
+                    <p class="text-lg italic text-gray-600">Indian Institute of Technology, Kanpur · Full-time</p>
+                    <p class="text-sm text-gray-500 mb-3">Oct 2021 - Aug 2022 · Kanpur Nagar, Uttar Pradesh, India</p>
+                    <p class="text-gray-700"><strong>Research Lead</strong> for the Development of <strong>Biomimetic Nano-Based Seed Priming Agents</strong> for Enhanced Agricultural Productivity, integrating nanotechnology with plant physiological insights.</p>
+                </div>
+                
+                <!-- Bundelkhand University -->
+                <div class="experience-card p-6 bg-white rounded-lg">
+                    <h3 class="text-xl font-bold text-charcoal">Assistant Professor</h3>
+                    <p class="text-lg italic text-gray-600">Bundelkhand University, Jhansi · Full-time</p>
+                    <p class="text-sm text-gray-500 mb-3">Jan 2018 - Sep 2021 · Jhansi Area, India</p>
+                    <p class="text-gray-700">Taught graduate and undergraduate courses in microbiology, biotechnology, and nanotechnology. Served as <strong>Principal Investigator</strong> on projects like 'Nano-Based Seed Germination Enhancer' (INR 1.41 million funding).</p>
+                </div>
+                
+                <!-- Integral University -->
+                <div class="experience-card p-6 bg-white rounded-lg">
+                    <h3 class="text-xl font-bold text-charcoal">Assistant Professor</h3>
+                    <p class="text-lg italic text-gray-600">Integral University · Full-time</p>
+                    <p class="text-sm text-gray-500 mb-3">Feb 2015 - Jan 2018 · Lucknow Area, India</p>
+                    <p class="text-gray-700">Delivered courses in Biotechnology engineering. Contributed to departmental initiatives and research projects, including the production of PHB biopolymer from Azohydromonas australica. Served in administrative roles as Ph.D. Coordinator, Placement Coordinator, and Alumni Coordinator.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION - REDESIGNED AS ATTRACTIVE CARDS -->
+        <section id="education" class="mb-10">
+            <h2 class="text-2xl font-bold text-charcoal pb-2 mb-6 section-header">Education</h2>
+            
+            <div class="space-y-6">
+                
+                <!-- Ph.D. - IIT Kanpur -->
+                <div class="education-card flex items-start space-x-4">
+                    <!-- Placeholder for an icon, if needed. Using inline styling for now. -->
+                    <div class="text-3xl degree-icon pt-1">&#127891;</div> 
+                    <div>
+                        <h3 class="text-lg font-bold text-charcoal">Doctor of Philosophy (Ph.D.)</h3>
+                        <p class="text-base italic text-gray-600">Indian Institute of Technology, Kanpur</p>
+                        <p class="text-sm text-gray-500">Nanotechnology, Agriculture, Biochemistry · 2012 - 2016</p>
+                        <p class="text-sm text-gray-600 mt-1">Grade: 8/10</p>
+                    </div>
+                </div>
+                
+                <!-- M.Tech - Integral University -->
+                <div class="education-card flex items-start space-x-4">
+                    <div class="text-3xl degree-icon pt-1">&#127891;</div>
+                    <div>
+                        <h3 class="text-lg font-bold text-charcoal">M.Tech, Biotechnology</h3>
+                        <p class="text-base italic text-gray-600">Integral University, Lucknow, Uttar Pradesh</p>
+                        <p class="text-sm text-gray-500">2006 - 2011</p>
+                        <ul class="list-disc ml-5 space-y-1 text-gray-700 text-sm mt-2 list-disc-gold">
+                            <li>Project work on Molecular characterization of plants, primer designing and validation and diversity analysis.</li>
+                            <li>Project on determination of anti-toxic activity of plant extracts on human lung cell lines.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION - REARRANGED -->
+        <section id="skills" class="mb-10">
+            <h2 class="text-2xl font-bold text-charcoal pb-2 mb-6 section-header">Skills</h2>
+            
+            <!-- Category: Core Research & Technology -->
+            <h3 class="text-lg font-semibold text-charcoal mb-3 mt-6">Core Research & Technology</h3>
+            <div class="flex flex-wrap gap-3 mb-6">
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Nanoparticles</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Multiphysiological Systems (MPS)</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Biotechnology</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Biological Engineering</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Research and Development (R&D)</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Agriculture Biotechnology</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Horticulture</span>
+            </div>
+            
+            <!-- Category: Analytical & Methodological -->
+            <h3 class="text-lg font-semibold text-charcoal mb-3 mt-6">Analytical & Methodological</h3>
+            <div class="flex flex-wrap gap-3 mb-6">
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Analytical Chemistry</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Technical Research</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Data Collection & SLR</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Statistics & Reasoning</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Patch-clamp & Electrophysiology</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Mammalian Cell Culture</span>
+            </div>
+
+            <!-- Category: Professional & Leadership -->
+            <h3 class="text-lg font-semibold text-charcoal mb-3 mt-6">Professional & Leadership</h3>
+            <div class="flex flex-wrap gap-3">
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Project Management</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Mentoring & Teaching</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Communication & Presentations</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Interdisciplinary Research</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Teamwork & Leadership</span>
+                <span class="bg-accent-gold text-white font-medium px-4 py-1.5 rounded-full shadow-sm">Organization & Admin</span>
+            </div>
+        </section>
+
+        <!-- CORE COMPETENCIES SECTION - REDESIGNED AS CARDS (NO GRAY BACKGROUND) -->
+        <section id="industry-focus" class="mb-10"> <!-- Removed p-6 bg-gray-100 rounded-lg -->
+            <h2 class="text-2xl font-bold text-charcoal pb-2 mb-6 section-header">Core Competencies</h2>
+            
+            <div class="grid sm:grid-cols-2 gap-4">
+                
+                <!-- Industry Card 1 -->
+                <div class="industry-card">
+                    <h4 class="text-lg font-semibold text-charcoal mb-2">
+                        <span class="competency-title">Organ-on-Chip Technologies</span>
+                    </h4>
+                    <p class="text-sm text-gray-700">Bio-Tech & Preclinical Modeling</p>
+                </div>
+                
+                <!-- Industry Card 2 -->
+                <div class="industry-card">
+                    <h4 class="text-lg font-semibold text-charcoal mb-2">
+                        <span class="competency-title">Biomedical R&D</span>
+                    </h4>
+                    <p class="text-sm text-gray-700">Pharmaceutical & Drug Toxicity</p>
+                </div>
+                
+                <!-- Industry Card 3 -->
+                <div class="industry-card">
+                    <h4 class="text-lg font-semibold text-charcoal mb-2">
+                        <span class="competency-title">Nanotechnology Applications</span>
+                    </h4>
+                    <p class="text-sm text-gray-700">Agri-Tech & Medical Diagnostics</p>
+                </div>
+
+                <!-- Industry Card 4 -->
+                <div class="industry-card">
+                    <h4 class="text-lg font-semibold text-charcoal mb-2">
+                        <span class="competency-title">Analytical & Bioassay Development</span>
+                    </h4>
+                    <p class="text-sm text-gray-700">Method Validation & Testing</p>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- PUBLICATIONS SECTION -->
+        <section id="publications" class="mb-10">
+            <h2 class="text-2xl font-bold text-charcoal pb-2 mb-6 section-header">Publications</h2>
+            <div class="space-y-4">
+                
+                <!-- 2019 -->
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Nano pyrite (FeS2) root priming enhances chilli and marigold production in nutrients-deficient soil: A nano strategy for fertiliser tuning</p>
+                    <p class="text-sm text-gray-600 italic">Applied Nanoscience (Springer International Publishing) · Apr 1, 2019</p>
+                </div>
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Comparison of Gaussian process regression, artificial neural network, and response surface methodology modeling approaches for predicting drying time of mosambi (Citrus limetta) peel</p>
+                    <p class="text-sm text-gray-600 italic">Journal of Food Process Engineering (John Wiley & Sons, Inc.) · Apr 1, 2019</p>
+                </div>
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Nanotechnology in sustainable agriculture: Studies from seed priming to post-harvest management</p>
+                    <p class="text-sm text-gray-600 italic">Nanotechnology for Environmental Engineering (Springer International Publishing) · Jan 12, 2019</p>
+                </div>
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Study on Quality Parameters and Storage Stability of Mango Coated with Developed Nanocomposite Edible Film</p>
+                    <p class="text-sm text-gray-600 italic">International Journal of Current Microbiology and Applied Sciences · Jan 1, 2019</p>
+                </div>
+                
+                <!-- 2018 -->
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Nano-pyrite seed dressing: a sustainable design for NPK equivalent rice production</p>
+                    <p class="text-sm text-gray-600 italic">Nanotechnology for Environmental Engineering (Springer International Publishing) · Dec 1, 2018</p>
+                </div>
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Importance and health hazards of nanoparticles used in the food industry</p>
+                    <p class="text-sm text-gray-600 italic">Nanotechnology Reviews (De Gruyter) · Sep 1, 2018</p>
+                </div>
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Nanotechnology in Packaging of Fresh Fruits and Vegetables</p>
+                    <p class="text-sm text-gray-600 italic">Apple Academy Press · Jan 1, 2018</p>
+                </div>
+
+                <!-- 2017 -->
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Evaluation of the nutrient profile of Trachyspermum ammi L. seed under the influence of nanoparticles during germination</p>
+                    <p class="text-sm text-gray-600 italic">Cellular and molecular biology (Noisy-le-Grand, France) · Jul 7, 2017</p>
+                </div>
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Cerium oxide nanozyme modulate the ‘exercise’ redox biology of skeletal muscle.</p>
+                    <p class="text-sm text-gray-600 italic">Materials Research Express · Mar 22, 2017</p>
+                </div>
+
+                <!-- 2016 -->
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">"Nano iron pyrite (FeS2) exhibits bi- functional electrode character.</p>
+                    <p class="text-sm text-gray-600 italic">RSC Advances · Jan 1, 2016</p>
+                </div>
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Nano-iron pyrite seed dressing: a sustainable intervention to reduce fertilizer consumption in vegetable (beetroot, carrot), spice (fenugreek), fodder (alfalfa), and oilseed (mustard, sesamum) crops.</p>
+                    <p class="text-sm text-gray-600 italic">Nanotechnology for Environmental Engineering · Jan 1, 2016</p>
+                </div>
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Seed stimulant effect of nano iron pyrite is compromised by nano cerium oxide: Regulation by the trace ionic species generated in the aqueous suspension of iron pyrite.</p>
+                    <p class="text-sm text-gray-600 italic">RSC Advances · Jan 1, 2016</p>
+                </div>
+
+                <!-- 2015 -->
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Heavily nitrogen doped, graphene supercapacitor from silk cocoon.</p>
+                    <p class="text-sm text-gray-600 italic">Electrochimica Acta · Jan 1, 2015</p>
+                </div>
+
+                <!-- 2014 -->
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Iron pyrite, a potential photovoltaic material, increases plant biomass upon seed pretreatment.</p>
+                    <p class="text-sm text-gray-600 italic">Materials Express · Jan 1, 2014</p>
+                </div>
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Nanoceria based electrochemical sensor for hydrogen peroxide detection.</p>
+                    <p class="text-sm text-gray-600 italic">Biointerphases · Jan 1, 2014</p>
+                </div>
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">Seed treatment with iron pyrite (FeS 2) nanoparticles increases the production of spinach</p>
+                    <p class="text-sm text-gray-600 italic">RSC Advances · Jan 1, 2014</p>
+                </div>
+
+                <!-- 2012 -->
+                <div class="border-l-4 border-accent-gold pl-4">
+                    <p class="font-semibold text-gray-800">PRALINE, a protein multiple sequence alignment tool: user perspective analysis.</p>
+                    <p class="text-sm text-gray-600 italic">GERF Bull Biosci · Jan 1, 2012</p>
+                </div>
+            </div>
+        </section>
+    </div> <!-- Closing the max-w-4xl container -->
+
+    <!-- FULL-WIDTH CONTACT / KEEP IN TOUCH SECTION (New Style) -->
+    <section id="contact" class="bg-contact-bg py-20 px-4 text-center text-white">
+        <div class="max-w-xl mx-auto">
+            <h2 class="text-4xl font-extrabold mb-4">Get In Touch</h2>
+            <div class="h-1 w-16 bg-accent-gold mx-auto mb-10 rounded-full"></div>
+
+            <p class="text-lg font-light mb-8 opacity-90">
+                I'm always open to discussing new research, innovative projects, or potential collaboration opportunities.
+            </p>
+
+            <p class="text-xl font-semibold mb-3">
+                Email: <span class="font-normal">gauravsri@live.com</span>
+            </p>
+            <p class="text-xl font-semibold mb-12">
+                Phone / WhatsApp: <span class="font-normal">+91 87562 47821</span>
+            </p>
+
+            <a href="https://wa.me/918756247821" target="_blank" class="inline-block bg-accent-gold hover:opacity-90 text-charcoal font-bold py-3 px-10 rounded-lg transition duration-300 shadow-xl text-lg">
+                Say Hello
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
